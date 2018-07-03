@@ -51,12 +51,12 @@ public class SevenSegmentTest {
     @Test
     public void testSetDigit(){
         assertEquals("Expected one.",ss.getDigit(one),'1');
-        assertEquals("Expected one.",ss.getDigit(four),'4');
-        assertEquals("Expected one.",ss.getDigit(five),'5');
-        assertEquals("Expected one.",ss.getDigit(seven),'7');
-        assertEquals("Expected one.",ss.getDigit(eight),'8');
+        assertEquals("Expected four.",ss.getDigit(four),'4');
+        assertEquals("Expected five.",ss.getDigit(five),'5');
+        assertEquals("Expected seven.",ss.getDigit(seven),'7');
+        assertEquals("Expected eight.",ss.getDigit(eight),'8');
         
-        assertEquals("Expected one.",ss.getDigit(invalid),'*');
+        assertEquals("Expected *.",ss.getDigit(invalid),'*');
     }
     
     /**
